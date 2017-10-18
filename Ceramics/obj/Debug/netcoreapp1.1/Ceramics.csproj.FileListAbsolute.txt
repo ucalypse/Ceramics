@@ -1,0 +1,11 @@
+C:\projects\Ceramics\Ceramics\bin\Debug\netcoreapp1.1\Ceramics.deps.json
+C:\projects\Ceramics\Ceramics\bin\Debug\netcoreapp1.1\Ceramics.runtimeconfig.json
+C:\projects\Ceramics\Ceramics\bin\Debug\netcoreapp1.1\Ceramics.runtimeconfig.dev.json
+C:\projects\Ceramics\Ceramics\bin\Debug\netcoreapp1.1\Ceramics.dll
+C:\projects\Ceramics\Ceramics\bin\Debug\netcoreapp1.1\Ceramics.pdb
+C:\projects\Ceramics\Ceramics\obj\Debug\netcoreapp1.1\Ceramics.csprojResolveAssemblyReference.cache
+C:\projects\Ceramics\Ceramics\obj\Debug\netcoreapp1.1\Ceramics.csproj.CoreCompileInputs.cache
+C:\projects\Ceramics\Ceramics\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+C:\projects\Ceramics\Ceramics\obj\Debug\netcoreapp1.1\Ceramics.AssemblyInfo.cs
+C:\projects\Ceramics\Ceramics\obj\Debug\netcoreapp1.1\Ceramics.dll
+C:\projects\Ceramics\Ceramics\obj\Debug\netcoreapp1.1\Ceramics.pdb
