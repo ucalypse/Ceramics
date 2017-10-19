@@ -31,5 +31,10 @@ namespace Ceramics.Controllers
         {
             return View();
         }
+
+        public IActionResult ArtWork()
+        {
+            return View();
+        }
     }
 }
