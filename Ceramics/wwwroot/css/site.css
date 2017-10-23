@@ -1,6 +1,10 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Wrapping element */
@@ -50,12 +54,14 @@ textarea {
 }
 
 #sharedNavBar {
-    background-color: red;
-    height: 150px;
+    height: 75px;
     font-family: TitleFont;
     font-size: 24px;
     color: black;
 }
+#sharedNavBar.navbar-header {
+    text-align: center;
+} 
 
 @font-face {
     font-family: TitleFont;
