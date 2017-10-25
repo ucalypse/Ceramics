@@ -37,6 +37,7 @@
 
   <ItemGroup>
     <Folder Include="Content\" />
+    <Folder Include="Views\Class\" />
   </ItemGroup>
 
 </Project>
