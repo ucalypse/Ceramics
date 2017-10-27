@@ -1,6 +1,5 @@
 ﻿body {
     padding-bottom: 20px;
-    z-index: 99;
     /*background-image: url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,11 +63,6 @@ textarea {
     text-align: center;
 } 
 
-#titlePage {
-    font-family: OldEnglish;
-    text-align: center;
-    font-size: 180px;
-}
 
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -77,9 +71,9 @@ textarea {
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: whitesmoke; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 60px;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -124,11 +118,15 @@ textarea {
 }
 
 #sharedDiv {
-    background-color: white;
-    height: 30px;
-    font-size: 24px;
-        
+    background-color: whitesmoke;
+    height: 100px;
+    transition: margin-left .5s;
 }
+    #sharedDiv p {
+        font-family: OldEnglish;
+        text-align: left;
+        font-size: 70px;
+    }
 
 /*#banner {
     background-size: cover;
