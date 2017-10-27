@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Ceramics.Data;
 using Ceramics.Models;
 using Ceramics.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ceramics
 {
@@ -46,10 +43,16 @@ namespace Ceramics
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+            //Custom 
+            services.AddDbContext<ClassContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddMvc();
 
             // Add application services.
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=CeramicsDb;Trusted_Connection=True;";
+            services.AddDbContext<ClassContext>(options => options.UseSqlServer(connection));
+
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
         }
