@@ -1,9 +1,10 @@
 ﻿body {
     padding-bottom: 20px;
-    background-image: url(../images/background.jpg);
+    z-index: 99;
+    /*background-image: url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 
 /* Wrapping element */
@@ -66,6 +67,7 @@ textarea {
 #titlePage {
     font-family: OldEnglish;
     text-align: center;
+    font-size: 180px;
 }
 
 .sidenav {
@@ -120,24 +122,21 @@ textarea {
     font-size: 30px;
     font-family: Twilight;
 }
+
 #sharedDiv {
     background-color: white;
-    height: 100px;
-    text-align: center;
+    height: 30px;
     font-size: 24px;
         
 }
-#sharedDiv p {
-    font-family: Cursive;
-}
 
-#banner {
+/*#banner {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
     width: 50%;
-}
+}*/
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {

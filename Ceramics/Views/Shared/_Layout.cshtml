@@ -20,11 +20,10 @@
     @Html.Raw(JavaScriptSnippet.FullScript)
    
 </head>
+
 <body>
 <div id="sharedDiv">
-    <span>
-        <img src="images/functionalArt.png" id="banner"/>
-    </span>
+    <p id="titlePage">Functional Art</p>
 </div>
 @*<nav class="navbar navbar-inverse navbar-fixed-top" id="sharedNavBar">
         <div class="container">
@@ -51,6 +50,7 @@
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
     <a asp-area="" asp-controller="Home" asp-action="About">Meet the Artist</a>
     <a asp-area="" asp-controller="Class" asp-action="Classes">Classes</a>
     <a asp-area="" asp-controller="Account" asp-action="Login">Log in</a>
@@ -99,12 +99,15 @@
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
-        $("#main").css("background-color : rgba(0,0,0,0.4);");
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        document.body.style.backgroundSize = "auto, cover";
+        document.getElementById("myCarousel").style.opacity = "0.6";
     }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
-        document.body.style.backgroundColor = "white";
+        document.body.style.backgroundColor = "whitesmoke";
+        document.getElementById("myCarousel").style.opacity = "1";
     }</script>
