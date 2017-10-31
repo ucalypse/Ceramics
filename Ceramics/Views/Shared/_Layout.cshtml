@@ -8,45 +8,27 @@
     <title>@ViewData["Title"] - Ceramics</title>
 
     <environment names="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+        
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/bulma.css" />
+        <link rel="stylesheet" href="~/css/site.css"/>
     </environment>
     <environment names="Staging,Production">
+        <link rel="stylesheet" type="text/css" href="/css/bulma.css" />
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"/>
+
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
     </environment>
     @Html.Raw(JavaScriptSnippet.FullScript)
-   
+    <link rel="stylesheet" href="css/bulma.css" />
 </head>
 
 <body>
 <div id="sharedDiv">
     <p id="titlePage">Functional Art</p>
 </div>
-@*<nav class="navbar navbar-inverse navbar-fixed-top" id="sharedNavBar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Ceramics</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav nav-justified">
-                    <li>@Html.ActionLink("Art", "ArtWork", "Home")</li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">Meet the Artist</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="Account" asp-action="Login">Log in</a></li>
-                </ul>
-                @await Html.PartialAsync("_LoginPartial")
-            </div>
-        </div>
-    </nav>*@
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>

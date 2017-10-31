@@ -38,6 +38,7 @@
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="Views\Class\" />
+    <Folder Include="wwwroot\node_modules\" />
   </ItemGroup>
 
 </Project>
