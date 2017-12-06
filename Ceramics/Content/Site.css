@@ -1,0 +1,165 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+textarea {
+    max-width: 280px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* buttons and links extension to use brackets: [ click me ] */
+.btn-bracketed::before {
+    display: inline-block;
+    content: "[";
+    padding-right: 0.5em;
+}
+
+.btn-bracketed::after {
+    display: inline-block;
+    content: "]";
+    padding-left: 0.5em;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#sharedNavBar {
+    height: 75px;
+    font-family: TitleFont;
+    font-size: 24px;
+    color: black;
+}
+
+    #sharedNavBar.navbar-header {
+        text-align: center;
+    }
+
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: whitesmoke; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+}
+
+        /* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus {
+            color: #f1f1f1;
+}
+
+    /* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+#aboutContent {
+    background-image: url("../images/easel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#missionStatement {
+    font-size: 30px;
+    font-family: Twilight;
+}
+
+#sharedDiv {
+    background-color: whitesmoke;
+    height: 100px;
+    transition: margin-left .5s;
+}
+
+#sharedDiv p {
+        font-family: OldEnglish;
+        text-align: left;
+        font-size: 70px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+@font-face {
+    font-family: TitleFont;
+    src: url("/Fonts/BEDOUIN.otf");
+}
+
+@font-face {
+    font-family: Cursive;
+    src: url("/Fonts/la-sonnambula-demo-ffp.ttf");
+}
+
+@font-face {
+    font-family: Twilight;
+    src: url("/Fonts/October Twilight - TTF.ttf");
+}
+
+@font-face {
+    font-family: OldEnglish;
+    src: url("/Fonts/old_english_hearts.ttf");
+}
